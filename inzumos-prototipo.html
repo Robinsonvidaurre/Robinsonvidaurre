@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>INZUMOS | Abastecimiento gastronómico mayorista</title>
+  <meta name="description" content="Insumos gastronómicos listos para producir, al por mayor y con entregas en Lima y todo el Perú.">
+  <style>
+    :root{--ink:#17372d;--green:#245b49;--lime:#c9da8f;--cream:#f7f1e4;--paper:#fffdf8;--orange:#e8743b;--muted:#64756f;--line:#d9dfd6;--shadow:0 20px 60px rgba(23,55,45,.14)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,Segoe UI,Arial,sans-serif;line-height:1.5}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}
+    .topbar{padding:9px 20px;background:var(--ink);color:#fff;text-align:center;font-size:13px;letter-spacing:.02em}.nav{display:flex;align-items:center;justify-content:space-between;height:78px}.logo{font-size:25px;font-weight:900;letter-spacing:.12em}.logo i{display:inline-block;width:11px;height:11px;margin-right:8px;background:var(--orange);border-radius:50%;font-style:normal}.links{display:flex;align-items:center;gap:28px;font-size:14px;font-weight:650}.button{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 20px;border:1px solid var(--ink);border-radius:999px;font-weight:750;transition:.2s}.button:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(23,55,45,.15)}.button.primary{background:var(--orange);border-color:var(--orange);color:white}.button.light{background:#fff;border-color:#fff}
+    .hero{position:relative;overflow:hidden;background:var(--cream);border-radius:30px;display:grid;grid-template-columns:1.18fr .82fr;min-height:570px}.hero-copy{padding:72px 64px;z-index:1}.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:7px 11px;background:#e6edd0;border-radius:99px;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.1em}.eyebrow:before{content:"";width:7px;height:7px;background:var(--orange);border-radius:50%}h1{font-family:Georgia,serif;font-size:clamp(48px,6.1vw,82px);line-height:.98;letter-spacing:-.055em;margin:28px 0 22px;max-width:760px}h1 em{color:var(--green);font-style:italic}.hero p{max-width:610px;font-size:18px;color:#4c625a}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}.proof{display:flex;gap:28px;margin-top:48px}.proof strong{display:block;font-size:21px}.proof span{font-size:12px;color:var(--muted)}
+    .visual{position:relative;background:var(--green);margin:22px;border-radius:22px;overflow:hidden;min-height:420px}.blob{position:absolute;border-radius:50%}.blob.one{width:310px;height:310px;background:var(--lime);top:-65px;right:-70px}.blob.two{width:230px;height:230px;background:var(--orange);bottom:-90px;left:-75px}.crate{position:absolute;inset:90px 36px auto 36px;background:rgba(255,255,255,.94);padding:25px;border-radius:18px;box-shadow:var(--shadow);transform:rotate(-2deg)}.crate small{font-weight:800;letter-spacing:.14em;color:var(--orange)}.crate h3{font:700 30px Georgia,serif;margin:8px 0}.tags{display:flex;flex-wrap:wrap;gap:8px}.tags span{padding:7px 10px;background:var(--cream);border-radius:7px;font-size:12px}.route{position:absolute;bottom:36px;right:24px;left:54px;background:var(--ink);color:#fff;border-radius:15px;padding:16px 18px;display:flex;align-items:center;justify-content:space-between;transform:rotate(2deg)}
+    section{padding:95px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:35px}.section-head h2{font:700 clamp(36px,5vw,57px) Georgia,serif;line-height:1.05;letter-spacing:-.035em;margin:0;max-width:690px}.section-head p{max-width:420px;color:var(--muted)}
+    .categories{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.card{border:1px solid var(--line);border-radius:18px;padding:12px 12px 25px;background:#fff;transition:.2s;overflow:hidden}.card:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:transparent}.product-image{display:block;width:100%;height:178px;object-fit:cover;border-radius:12px}.card h3,.card p,.card a{margin-left:13px;margin-right:13px}.card h3{font-size:19px;margin-top:20px;margin-bottom:8px}.card p{font-size:14px;color:var(--muted);min-height:62px}.card a{display:inline-block;margin-top:12px;font-size:13px;font-weight:800;color:var(--orange)}
+    .band{background:var(--ink);color:white}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}.step{padding:30px 0;border-top:1px solid #537067}.step b{font:italic 42px Georgia,serif;color:var(--lime)}.step h3{font-size:20px;margin:24px 0 8px}.step p{color:#bad0c8}.band .section-head p{color:#bad0c8}
+    .clients{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.client{padding:34px;border-radius:20px;background:var(--cream);min-height:245px}.client:nth-child(2){background:#e6edd0}.client:nth-child(3){background:#f6ded0}.client strong{font-size:13px;text-transform:uppercase;letter-spacing:.12em}.client h3{font:700 30px Georgia,serif;margin:42px 0 10px}.client p{color:#536860}
+    .cta{background:var(--orange);color:white;border-radius:28px;padding:60px;display:flex;justify-content:space-between;align-items:center;gap:30px}.cta h2{font:700 clamp(35px,5vw,58px) Georgia,serif;line-height:1;margin:0;max-width:690px}.cta p{max-width:390px}.footer{padding:42px 0 30px}.footer-row{display:flex;justify-content:space-between;gap:30px;align-items:center}.footer small{color:var(--muted)}
+    @media(max-width:900px){.links a:not(.button){display:none}.hero{grid-template-columns:1fr}.hero-copy{padding:55px 35px}.visual{min-height:400px}.categories{grid-template-columns:1fr 1fr}.steps,.clients{grid-template-columns:1fr}.client{min-height:auto}.cta{align-items:flex-start;flex-direction:column}.proof{flex-wrap:wrap}}
+    @media(max-width:560px){.wrap{width:min(100% - 24px,1160px)}.nav{height:66px}.logo{font-size:20px}.nav .button{padding:10px 14px;font-size:12px}.hero-copy{padding:40px 22px}.hero{border-radius:20px}.visual{margin:12px;min-height:360px}.crate{inset:60px 18px auto}.route{left:22px;right:16px}.categories{grid-template-columns:1fr}section{padding:68px 0}.section-head{display:block}.cta{padding:38px 25px}.footer-row{align-items:flex-start;flex-direction:column}.proof{gap:18px}}
+  </style>
+</head>
+<body>
+  <div class="topbar">🚚 Envíos mayoristas en Lima y a todo el Perú</div>
+  <header class="wrap nav">
+    <a class="logo" href="#"><i></i>INZUMOS</a>
+    <nav class="links" aria-label="Navegación principal"><a href="#catalogo">Productos</a><a href="#como-funciona">Cómo comprar</a><a href="#clientes">Para tu negocio</a><a class="button primary" href="#cotizar">Solicitar cotización</a></nav>
+  </header>
+  <main>
+    <div class="wrap hero">
+      <div class="hero-copy">
+        <span class="eyebrow">Abastecimiento gastronómico B2B</span>
+        <h1>Tu cocina produce. Nosotros la <em>abastecemos.</em></h1>
+        <p>Insumos listos para usar, formatos de alto rendimiento y entregas confiables para restaurantes, dark kitchens y cocinas de hoteles.</p>
+        <div class="actions"><a class="button primary" href="#catalogo">Ver categorías →</a><a class="button" href="#cotizar">Cotizar mi pedido</a></div>
+        <div class="proof"><div><strong>Venta 100% mayorista</strong><span>Formatos pensados para cocina profesional</span></div><div><strong>Lima + todo el Perú</strong><span>Despachos coordinados para tu operación</span></div></div>
+      </div>
+      <div class="visual" aria-label="Representación de una caja de insumos gastronómicos">
+        <div class="blob one"></div><div class="blob two"></div>
+        <div class="crate"><small>CAJA INZUMOS · 0187</small><h3>Listo para tu mise en place</h3><div class="tags"><span>Aceite vegetal</span><span>Salsa de ají</span><span>Ajo picado</span><span>Manteca</span><span>Aderezo base</span></div></div>
+        <div class="route"><span>Pedido preparado</span><strong>Lima → Tu cocina</strong></div>
+      </div>
+    </div>
+
+    <section id="catalogo" class="wrap">
+      <div class="section-head"><h2>Todo lo que acelera una cocina profesional.</h2><p>Productos seleccionados para reducir tiempos de preparación, estandarizar recetas y mantener tu operación abastecida.</p></div>
+      <div class="categories">
+        <article class="card"><img class="product-image" src="assets/productos/aceites.jpg" alt="Botella y recipiente con aceite vegetal dorado" loading="lazy"><h3>Aceites y grasas</h3><p>Aceites vegetales, oliva, mantecas y soluciones para fritura en formatos institucionales.</p><a href="#cotizar">Consultar formatos →</a></article>
+        <article class="card"><img class="product-image" src="assets/productos/salsas.jpg" alt="Mayonesa y salsa de ají listas para usar" loading="lazy"><h3>Aderezos y salsas</h3><p>Bases de sabor, mayonesas, salsas de ají y aderezos listos para producción.</p><a href="#cotizar">Consultar formatos →</a></article>
+        <article class="card"><img class="product-image" src="assets/productos/picados.jpg" alt="Ajo, cebolla y hierbas frescas finamente picadas" loading="lazy"><h3>Picados listos</h3><p>Ajo, cebolla, hierbas y vegetales procesados para ahorrar tiempo de mise en place.</p><a href="#cotizar">Consultar formatos →</a></article>
+        <article class="card"><img class="product-image" src="assets/productos/bases-especias.jpg" alt="Selección de especias y base culinaria concentrada" loading="lazy"><h3>Bases e ingredientes</h3><p>Concentrados, especias, pulpas y componentes de alto rendimiento para tus recetas.</p><a href="#cotizar">Consultar formatos →</a></article>
+      </div>
+    </section>
+
+    <section id="como-funciona" class="band"><div class="wrap"><div class="section-head"><h2>Abastecer tu cocina debe ser simple.</h2><p>Atención comercial directa y una cotización adaptada al volumen real de tu negocio.</p></div><div class="steps"><article class="step"><b>01</b><h3>Cuéntanos qué necesitas</h3><p>Indica productos, formatos, frecuencia y ciudad de entrega.</p></article><article class="step"><b>02</b><h3>Recibe tu cotización</h3><p>Te enviamos disponibilidad, precios por volumen y condiciones de despacho.</p></article><article class="step"><b>03</b><h3>Recibe y vuelve a pedir</h3><p>Coordinamos la entrega y facilitamos la reposición de tus productos habituales.</p></article></div></div></section>
+
+    <section id="clientes" class="wrap"><div class="section-head"><h2>Hecho para el ritmo de tu negocio.</h2></div><div class="clients"><article class="client"><strong>Restaurantes</strong><h3>Consistencia en cada servicio.</h3><p>Insumos confiables para mantener sabor, rendimiento y control de costos.</p></article><article class="client"><strong>Dark kitchens</strong><h3>Más velocidad, menos preparación.</h3><p>Productos listos para usar que reducen tareas y simplifican la producción.</p></article><article class="client"><strong>Hoteles y catering</strong><h3>Volumen sin perder calidad.</h3><p>Formatos institucionales y abastecimiento coordinado para operaciones exigentes.</p></article></div></section>
+
+    <section id="cotizar" class="wrap"><div class="cta"><div><h2>¿Qué necesita tu cocina esta semana?</h2><p>Solicita una cotización mayorista. Atendemos Lima y coordinamos envíos a todo el Perú.</p></div><a class="button light" href="mailto:ventas@inzumos.pe?subject=Solicitud%20de%20cotización%20mayorista">Solicitar cotización →</a></div></section>
+  </main>
+  <footer class="wrap footer"><div class="footer-row"><a class="logo" href="#"><i></i>INZUMOS</a><small>Prototipo comercial · Venta exclusiva para negocios · Lima, Perú</small><small>© 2026 INZUMOS</small></div></footer>
+</body>
+</html>
